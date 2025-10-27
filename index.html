@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script id="_wau1ca">var _wau = _wau || []; _wau.push(["dynamic", "valencia", "1ca", "ffffffffffff", "small"]);</script>
+    <script async src="//waust.at/d.js"></script> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotos Exclusivas</title>
+    <meta name="description" content="Descubre mis Fotos Exclusivas">
+    
+    <!-- Meta Tags específicos para Facebook -->
+    <meta property="og:title" content="Fotos Exclusivas">
+    <meta property="og:description" content="Descubre mis Fotos Exclusivas>
+    <meta property="og:image" content="https://i.postimg.cc/bw8HrLmS/20.jpg">
+    <meta property="og:url" content="https://wikipedia.org/wiki/United_States">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Fotos Exclusivas">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="https://cdn.jmpcdn.com/assets/3420/images/2.ico" type="image/x-icon">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            height: 100vh;
+            background-color: #000;
+        }
+        
+        /* Imagen de fondo optimizada */
+        #ImageBg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://i.postimg.cc/50QdRxks/1008621.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: -1;
+            /* Mejora de rendimiento */
+            transform: translateZ(0);
+            backface-visibility: hidden;
+            perspective: 1000;
+        }
+        
+        /* Capa oscura para mejor contraste */
+        .image-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+        
+        .center-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 18px 35px;
+            background: linear-gradient(45deg, #ff6b6b, #ffd700);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            /* Mejora de rendimiento */
+            transform: translateZ(0);
+            backface-visibility: hidden;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px) translateZ(0);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+        }
+        
+        .btn:active {
+            transform: translateY(-1px) translateZ(0);
+        }
+        
+        .btn i {
+            margin-left: 10px;
+            transition: transform 0.3s ease;
+        }
+        
+        .btn:hover i {
+            transform: scale(1.1);
+        }
+        
+        /* Efecto de pulso sutil para llamar la atención */
+        @keyframes pulse {
+            0% { box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); }
+            50% { box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3); }
+            100% { box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); }
+        }
+        
+        .btn {
+            animation: pulse 3s infinite;
+        }
+        
+        /* Responsive para móviles */
+        @media (max-width: 768px) {
+            .btn {
+                padding: 16px 30px;
+                font-size: 1.1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .btn {
+                padding: 14px 25px;
+                font-size: 1rem;
+            }
+        }
+        
+        /* Optimización para dispositivos táctiles */
+        @media (hover: none) and (pointer: coarse) {
+            .btn:hover {
+                transform: none;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            }
+            
+            .btn:active {
+                transform: scale(0.98);
+            }
+        }
+        
+        /* Prevención de selección de texto */
+        .btn {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+
+<div id="ImageBg"></div>
+<div class="image-overlay"></div>
+
+<div class="center-container">
+  <a href="https://clic.link0ff.com/valencia" class="btn" id="subscribe-btn">
+    Continuar <i class="fas fa-star"></i>
+  </a>
+</div>
+
+<script>
+    // Optimización de carga de imagen
+    document.addEventListener('DOMContentLoaded', function() {
+        // Precargar la imagen para evitar parpadeos
+        const img = new Image();
+        img.src = 'https://i.postimg.cc/50QdRxks/1008621.jpg';
+        
+        // Mejorar rendimiento en dispositivos móviles
+        if ('connection' in navigator) {
+            if (navigator.connection.saveData) {
+                // Si el usuario tiene activado el ahorro de datos, reducir animaciones
+                document.querySelector('.btn').style.animation = 'none';
+            }
+        }
+        
+        // Prevenir acciones por defecto en el botón para mejor rendimiento
+        document.getElementById('subscribe-btn').addEventListener('click', function(e) {
+            // Permitir que el enlace funcione normalmente
+            // Esta función está aquí por si necesitas agregar tracking u otras funcionalidades
+        });
+    });
+    
+    // Prevenir zoom en dispositivos móviles al tocar el botón
+    document.addEventListener('touchstart', function(e) {
+        if (e.touches.length > 1) {
+            e.preventDefault();
+        }
+    }, { passive: false });
+    
+    let lastTouchEnd = 0;
+    document.addEventListener('touchend', function(e) {
+        const now = (new Date()).getTime();
+        if (now - lastTouchEnd <= 300) {
+            e.preventDefault();
+        }
+        lastTouchEnd = now;
+    }, false);
+</script>
+
+</body>
+</html>
